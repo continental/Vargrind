@@ -1,0 +1,31 @@
+--- check_headers_and_includes	2021-10-12 11:19:54.711032700 +0000
++++ check_headers_and_includes_new	2021-10-12 08:56:38.833841177 +0000
+@@ -53,6 +53,8 @@
+     "none" => 1,
+     "exp-bbv" => 1,
+     "shared" => 1,
++    "vargrind" => 1,
++    "bsw.ds.leap.vargrind" => 1
+     );
+ 
+ my %dirs_to_ignore = (
+@@ -69,7 +71,8 @@
+     "tests" => 1,
+     "gdbserver_tests" => 1,
+     "mpi" => 1,
+-    "solaris" => 1
++    "solaris" => 1,
++    "inst" => 1
+     );
+ 
+ my %tool_export_header = (
+@@ -77,7 +80,8 @@
+     "drd/drd.h" => 1,
+     "helgrind/helgrind.h" => 1,
+     "memcheck/memcheck.h" => 1,
+-    "callgrind/callgrind.h" => 1
++    "callgrind/callgrind.h" => 1,
++    "vargrind/include/vargrind.h" =>1
+     );
+ 
+ my $usage=<<EOF;

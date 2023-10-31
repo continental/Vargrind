@@ -1,0 +1,24 @@
+# valgrind/
+logs/
+Makefile
+!tests/Makefile
+.deps/
+.dirstamp
+FIRST_RUN/
+*.o
+*.out
+vargrind-amd64-linux
+*.in
+*.s
+vargrind/tests/bin/
+.vscode
+*.swp
+tests/bin/
+tests/obj/
+*.am.orig
+*.in
+vargrind.txt
+tests/check_addresses
+tests/total_counters
+*.so
+vagrant/.vagrant
